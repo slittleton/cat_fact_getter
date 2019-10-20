@@ -1,0 +1,97 @@
+body {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(44, 44, 54);
+  font-family: Helvetica, serif;
+}
+.top{
+  margin: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: gray;
+  width: 500px;
+  margin: auto;
+  padding: 1rem;
+  transition: all 500ms ease-out;
+}
+.container:hover {
+  padding: 2rem;
+}
+.text {
+  border: 1rem solid orange;
+  padding: 1rem;
+  width: 400px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 500ms ease-in;
+}
+.text:hover {
+  background-color: black;
+  color: white;
+}
+.text2 {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: orange;
+  opacity: 0;
+  animation-name: sub;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.btn {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 0.5rem;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition: all 400ms ease-in;
+}
+.btn:hover {
+  transform: rotateY(180deg);
+  color: gray;
+}
+
+@keyframes sub {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section1 {
+  font-size: 1.2rem;
+  text-align: justify;
+  position: relative;
+  animation: heading;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0%{ top: -100px }
+  100% { top: 50px}
+}
