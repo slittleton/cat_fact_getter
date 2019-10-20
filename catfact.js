@@ -11,7 +11,7 @@ async function getFact() {
 // Event Listener
 document.querySelector(".btn-box").addEventListener("click", showFact);
 
-
+// Display Fact(s)
 async function showFact() {
   const fact = await getFact();
 

@@ -1,4 +1,7 @@
 "use strict";
+// ====== Joke Getter ======
+// Similar to the cat fact getter but instead gets Jokes
+
 let jokeList = [];
 
 // Get A Joke
@@ -10,7 +13,7 @@ async function getJoke() {
 // Event Listener
 document.querySelector(".btn-box").addEventListener("click", showJoke);
 
-//
+// Display Joke(s)
 async function showJoke() {
   const joke = await getJoke();
 
